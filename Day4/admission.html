@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>admissionform</title>
+    </head>
+    <body>
+        <h1><b><i>British College</i></b></h1>
+        <h2><u>About College</u></h2>
+        <p>
+
+        </p>
+        <br><hr>
+
+        <h2><u>Admission Form</u></h2>
+        <form action="/register" method="post">   
+           <label for="fullName">Full Name:</label>   
+           <input type="text" id="fullName" name="fullName" placeholder="Enter full name">   
+            <br><hr>
+
+           <label for="email">Email:</label>   
+           <input type="email" id="email" name="email" placeholder="you@example.com">  
+            <br><hr>
+
+           <label for="Contact">Contact Number:</label>   
+           <input type="tel" id="Contact" name="Contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"> 
+            <br><hr>
+            
+           <label for="dob">Date of Birth:</label>
+           <input type="date" id="dob" name="dob">
+            <br><hr>
+
+           <label for="gender">Gender</label>
+           <input type="radio" id="gender" name="gender" value="male">
+           <label for="gender">Male</label>
+           <input type="radio" id="gender" name="gender" value="female">
+           <label for="gender">Female</label>
+           <br><hr>
+
+           <label for="address">Address:</label>   
+           <textarea id="address" name="address"></textarea>   
+            <br><hr>
+
+           <label for="interestedCourse">Interested Course:</label>
+           <select id="interestedCourse" name="interestedCourse">
+               <option value="bit">BIT</option>
+               <option value="csit">BSc. CSIT</option>
+               <option value="bca">BCA</option>
+           </select>
+           <br><hr>
+
+           <label for="hobbies">Hobbies:</label>
+           <textarea id="hobbies" name="hobbies"></textarea>
+           <br><hr>
+
+           <button type="submit">Submit</button>
+            <br><hr>
+        </form>
+        
+        <h2><u>Available Courses</u></h2>
+        <table border="1">
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>BIT</td>
+            <td>4 years</td>
+        </tr>
+        <tr>
+            <td>BSc. CSIT</td>
+            <td>4 years</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>4 years</td>
+        </tr>
+    </table>
+
+    </body>
+</html>

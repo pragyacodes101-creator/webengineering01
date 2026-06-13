@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+    </head>
+    <body>
+       <table border="1">
+        <thead>
+        <tr><th>Name</th><th>Age</th><th>Gender</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>ram</td><td>20</td><td>male</td></tr>
+            <tr><td>shyam</td><td>25</td><td>male</td></tr>
+        </tbody>
+    </table> 
+
+     <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>S001</td>
+            <td>Ram</td>
+            <td>HTML</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>S001</td>
+            <td>Ram</td>
+            <td>CSS</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>S001</td>
+            <td>Ram</td>
+            <td>JavaScript</td>
+            <td>92</td>
+        </tr>
+    </table>
+    <br>
+
+<form action="/register" method="post">   
+    <label for="studentId">Student ID:</label>   
+    <input type="text" id="studentId" name="studentId">  
+    <br><hr>
+    <label for="fullName">Full Name:</label>   
+    <input type="text" id="fullName" name="fullName" placeholder="Enter full name">   
+    <br><hr>
+    <label for="email">Email:</label>   
+    <input type="email" id="email" name="email" placeholder="you@example.com">  
+    <br><hr>
+    <label for="password">Password:</label>   
+    <input type="password" id="password" name="password"> 
+    <br><hr>
+    <label for="address">Address:</label>   
+    <textarea id="address" name="address"></textarea>   
+    <br><hr>
+    <label for="parentContact">Parent Contact Number:</label>   
+    <input type="tel" id="parentContact" name="parentContact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"> 
+    <br><hr>
+    <label for="emergencyContact">Emergency Contact:</label>   
+    <input type="tel" id="emergencyContact" name="emergencyContact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">  
+    <br><hr>
+    <button type="submit">Register</button>
+</form>                
+
+    </body>
+</html>
